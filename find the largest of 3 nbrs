@@ -1,0 +1,14 @@
+
+x = float(input("Enter the first number: "))
+y = float(input("Enter the second number: "))
+z = float(input("Enter the third number: "))
+
+def find_largest(num1, num2, num3):
+    if x >= y and x >= z:
+        return x
+    elif y >= x and y >= z:
+        return y
+    else:
+        return z
+largest = find_largest(x, y, z)
+print(f"The largest number is: {largest}")
